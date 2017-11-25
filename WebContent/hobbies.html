@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script2.js"></script>
+<title>Hobbies</title>
+</head>
+<body>
+<h1>Hobbies</h1>
+<ul class="menu">
+    <li class = "menu"><a href="index.html">Home</a></li>
+    <li class = "menu"><a href="aboutme.html">About Me</a></li>
+    <li class = "menu"><a class="active" href="hobbies.html">Hobbies</a></li>
+    <li class = "menu"><a href="hometown.html">Home Town</a></li>
+   <!-- <li class = "menu"><a href="experiments.html">Experiments</a></li> -->
+</ul>
+<a href="https://myspace.com/ryderdalewalton/music/songs">
+  <img src="images/hobbieGuitarW256.jpg" title="Listen on Myspace!"
+       alt="High School Senior Photo"></a>
+<br><br>
+<div id="myProgress">
+    <div id="myBar" onload="move()"></div>
+</div>
+<br>
+<button class="accordion">Stuff I like to do:</button>
+<div class="panel">
+  <p title = "I'm into brain activities.">
+Since I was young, I have tended to migrate toward
+activities that have less to do with physical stuff and more to do with mental gymnastics.
+That's not to say that I don't enjoy watching a good 
+<a href="http://www.nba.com/thunder/" target="_blank">Thunder</a> game
+whenever I can, and I never miss <a href="http://sfbaysuperbowl.com" target="_blank">The Super Bowl</a>! 
+This is just a short list of how I actually spend my free time.
+</p>
+</div>
+<br><br>
+<p>Check out the links below. Clicking them will take you to one of my favorite things from each
+category!</p>
+<ul>
+  <li>Programming whatever I can get my hands on!</li>
+  <li>Write</li>
+    <ol>
+      <li>Prose</li>
+      <li>Poems</li>
+    </ol>
+  <li>Read</li>
+    <ol>
+      <li><a href="http://www.amazon.com/gp/product/B000O76ON6/">Sci_Fi: <i>Neuromancer</i></a></li>
+      <li>Language Studies</li>
+      <li>Graphic Novels and Comics</li>
+    </ol>
+  <li>Gaming</li>
+    <ol>
+      <li><a href="http://www.metroid.com/primetrilogy/">Games: <i>Metroid Prime</i></a></li>
+      <li><a href="http://magic.wizards.com/">Tabletop and Card Games: <i>Magic</i></a></li>
+      <li><a href="http://dnd.wizards.com/">Roleplaying Games: <i>D&D</i></a></li>
+      </ol>
+  <li>Music</li>
+    <ol>
+      <li>Guitar</li>
+      <li>Bass</li>
+      <li><a href="https://www.youtube.com/watch?v=44ZTJ4HGEDA">Appreciation: <i>Yvette Young</i></a></li>
+    </ol>
+  <li>Art</li>
+    <ol>
+      <li>Drawing</li>
+      <li><a href="http://www.deviantart.com/">Appreciation: <i>DeviantArt</i></a></li>
+    </ol>
+</ul>
+
+<!-- Added Form -->
+<p>Guess which of the above linked items is my favorite!</p>
+  <p class="hint"> Hint: Type your guess exactly as it is written after the colon.</p>
+<form onsubmit="return checkHobby(this);">
+  <input id="guess" type="text" name="guess" />
+  <button type="submit">Submit</button>
+</form>
+<br>
+<a href="http://www.refsnesdata.no/certification/w3certified.asp?id=7271947">
+	<img class="certification" src="images/w3cert.png" border="0"  alt="W3Schools Certified"/></a>
+</body>
+<footer>Listen on <a href="https://myspace.com/ryderdalewalton/music/songs">Myspace</a>!
+</footer>
+
+<!--Source the external JavaScript document-->
+<script src="script.js"></script>
+</html>

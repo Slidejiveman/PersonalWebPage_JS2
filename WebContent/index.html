@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script2.js" type="text/javascript"></script>
+<title>Ryder Dale's Webpage</title>
+</head>
+<body>
+<h1>Ryder Dale Walton</h1>
+<ul class="menu">
+    <li class = "menu"><a class="active" href="index.html">Home</a></li>
+    <li class = "menu"><a href="aboutme.html">About Me</a></li>
+    <li class = "menu"><a href="hobbies.html">Hobbies</a></li>
+    <li class = "menu"><a href="hometown.html">Home Town</a></li>
+    <!-- <li class = "menu"><a href="experiments.html">Experiments</a></li> -->
+</ul>
+<br><br><br>
+<a href="aboutme.html">
+    <img src="images/aboutMeW_300H_169.jpg" alt = "Me with a selfie stick..." title="Selfie Stick!"
+    draggable="true" ondragstart="drag(event)">
+</a>
+<a href="hobbies.html">
+    <img src="images/hobbiesCardW300_H418.jpg" alt = "Magic: The Gathering card" title="MTG" width="126px"></a>
+<a href="hometown.html">
+    <img src="images/hometownFolks_W300_H169.jpg" alt = "Parents in Shattuck, OK" title="Ma and Darth Pa!">
+</a>
+<br><br><br>
+
+<button class="displayButton" onclick="toggleContent(1)">About The Selfie Stick</button>
+<button class="displayButton" onclick="toggleContent(2)">About Nirkana Cutthroat</button>
+<button class="displayButton" onclick="toggleContent(3)">About Darth Pa</button>
+<div id="display1"><p>The selfie stick was a Christmas present from BB. It's sacred.</p></div>
+<div id="display2"><p>Nirkana Cutthroat is a Legacy MTG card I used to destroy my friends! Yay!</p></div>
+<div id="display3"><p>Dad and I got lightsabers for Christmas and reenacted "the scene."</p></div>
+
+<p>Try dragging and dropping the W3Schools photo into this box!</p>
+<div id="container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<div class="spinwheel"></div>
+
+<!-- Testing out inline JS -->
+<script type="text/javascript">
+function toggleContent(number) {
+	var x = number;
+	var contentId = document.getElementById("display" + x);
+	contentId.style.display == "block" ? contentId.style.display = "none" :
+		contentId.style.display = "block";
+}
+</script>
+
+</body>
+<a href="http://www.refsnesdata.no/certification/w3certified.asp?id=7271947">
+	<img id="drag1" src="images/w3cert.png" alt="W3Schools Certified" draggable="true"
+	ondragstart="drag(event)"/></a>
+</html>
